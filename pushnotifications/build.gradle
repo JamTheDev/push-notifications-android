@@ -1,6 +1,7 @@
-apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
-apply from: 'maven-push.gradle'
+plugins {
+    id 'com.android.library' version '8.5.0' // Use Gradle 8.5 compatible version
+    id 'kotlin-android' version '1.7.21' // Adjust if needed, but 1.7.21 works with 8.5
+}
 
 android {
     compileSdkVersion 31
